@@ -8,4 +8,19 @@
     --button-color: #ff611d; /* Yellow */
     --button-hover-color:#c5450e;
 
+    --color1:#FF8800;
+    --color2:#FFD700;
+    --color3:#E65100;
+    --color4:#FFEB3B;
+
+    --set1:#1E1E1E;
+    --set2:#FF8800;
+    --set3:#ffe342;
+
+
 }
+
+button, input{
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.5);
+}
+
