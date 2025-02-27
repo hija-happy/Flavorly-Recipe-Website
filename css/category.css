@@ -1,0 +1,141 @@
+* {
+    font-family: 'Raleway';
+}
+
+.category-head {
+    margin: 100px 50px 50px 50px;
+    width: 100wh;
+    height: 300px;
+    background-color: black;
+    background-image: url(/images/category-page/category-image.jpg);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    color: white;
+}
+
+.category-head img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    right: 1%;
+    top: 55%;
+    z-index: 50;
+}
+
+.category-head-text {
+    width: 60%;
+}
+.category-head-text p {
+    font-size:25px ;
+}
+
+.featured {
+    position: relative;
+    margin: 0 30px 0px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 600px;
+    border-radius: 10px;
+    background-color: var(--button-color);
+}
+
+.featured h1 {
+    position: absolute;
+    display: block-inline;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.featured-recipe {
+    position: relative;
+    flex-direction: row; 
+    top: 35px;
+  
+   
+}
+
+.featured-recipe img {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.featured-recipe img:hover{
+    transform: scale(1.05);
+}
+
+
+
+.featured-recipe .featured-text {
+    color: aliceblue;
+    position: absolute;
+    font-family: 'Raleway';
+    font-size: 30px;
+    top: 10%;
+    left: 10%;
+}
+
+
+.category-list {
+ position: relative;
+}
+
+.category-list h1 {
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 50px;
+}
+
+.grid img {
+    border-radius: 200px;
+    width: 250px;
+    height: auto;
+    margin: 20px;
+    
+}
+
+.grid div {
+    position: relative;
+}
+
+.grid div p {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    transform: translate(-40%,-50%);
+    display: none;
+}
+
+
+.grid img:hover {
+    filter: brightness(50%) !important;
+    filter: blur(50%) !important;
+    cursor: pointer;
+}
+
+.grid div:hover p{
+    cursor: pointer;
+    display: block;
+    color: white ;
+    background-image: linear-gradient(rgba(0,0,0,0.5,black));
+    
+
+}
