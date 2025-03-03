@@ -16,12 +16,23 @@
     
     <nav>
         <h3 class="logo">Flavorly</h3>
+        <ul class="sidebar">
+            <i class="fa-sharp fa-solid fa-xmark" onclick=closeSidebar()></i>
+            <h3 class="logo-phone">  <h3 class="logo-phone">Flavorly</h3></h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>      
+        </ul>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="category.html">Category</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>      
         </ul>
+        <div class="menu" onclick=showSidebar()>
+            &#9776;
+        </div>
     </nav>
     <div class="contact">
         
@@ -61,5 +72,6 @@
         </div>
     </div>
 </body>
+<script src="js/function.js"></script>
 <script src="https://kit.fontawesome.com/8cdce12f0f.js" crossorigin="anonymous"></script>
 </html>

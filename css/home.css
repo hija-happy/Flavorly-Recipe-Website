@@ -75,6 +75,32 @@ nav a:hover {
     color: var(--button-color);
 }
 
+.sidebar {
+
+    position: fixed;
+    background-color: #ffffff1f;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 40%;
+    top: 0;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.3);
+    right: 0;
+    display: none;
+    flex-direction: column;
+    z-index: inherit;
+    justify-content: flex-start;
+    gap: 10%;
+    align-items: flex-start;
+}
+
+.sidebar a {
+    font-size: 1.2rem;
+}
+
+.logo-phone {
+    align-items: center;
+    top: 10%;
+}
 
 .home-header {
     position: absolute;
@@ -234,4 +260,13 @@ span {
         display: block;
     }
 
+    
+
+    i {
+
+        position: absolute;
+        color: white;
+        top: 5%;
+        right: 5%;
+    }
 }

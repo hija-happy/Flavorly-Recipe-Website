@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/global.css">
-    
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Crushed&family=Give+You+Glory&family=Kings&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,13 +17,21 @@
         <img src="images/home-page/homepage.jpg" class="header-image">
             <nav>
                 <h3 class="logo">Flavorly</h3>
+                <ul class="sidebar">
+                    <i class="fa-sharp fa-solid fa-xmark" onclick=closeSidebar()></i>
+                    <h3 class="logo-phone">  <h3 class="logo-phone">Flavorly</h3></h3>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>      
+                </ul>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="category.html">Category</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>      
                 </ul>
-                <div class="menu">
+                <div class="menu" onclick=showSidebar()>
                     &#9776;
                 </div>
             </nav>
@@ -65,4 +71,5 @@
             </div>
         </footer>
 </body>
+<script src="js/function.js"></script>
 </html>

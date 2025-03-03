@@ -14,12 +14,23 @@
 <body>
     <nav>
         <h3 class="logo">Flavorly</h3>
+        <ul class="sidebar">
+            <i class="fa-sharp fa-solid fa-xmark" onclick=closeSidebar()></i>
+            <h3 class="logo-phone">  <h3 class="logo-phone">Flavorly</h3></h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>      
+        </ul>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="category.html">Category</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>      
         </ul>
+        <div class="menu" onclick=showSidebar()>
+            &#9776;
+        </div>
     </nav>
     <div class="about">
         <div class="text">
@@ -32,4 +43,6 @@
     </div>
     
 </body>
+
+<script src="js/function.js"></script>
 </html>
