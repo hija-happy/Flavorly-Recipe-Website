@@ -1,4 +1,4 @@
-@import '/css/global.css';
+@import 'css/global.css';
 
 * {
     margin: 0;
@@ -12,17 +12,17 @@ body {
     color: black;
 }
 
-
 .header img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    object-position: right;
     position: relative;
 }
 
 nav{
     width: 100%;
-    height: 100px;
+    height: 15vmin;
     background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     top: 0;
@@ -33,7 +33,7 @@ nav{
 }
 
 nav .logo {
-    font-size: 30px;
+    font-size: 4.5vmin;
     cursor: pointer;
     position: absolute;
     left: 10%;
@@ -41,22 +41,20 @@ nav .logo {
 }
 
 nav ul {
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
     position: absolute;
     right: 20%;
-    
-
 }
 
 nav ul li {
     list-style: none;
     display: inline;
     margin: 10px;
-    font-size: 15px;
+    font-size: 2.2vmin;
+
     font-weight: 500;
     cursor: pointer;
 }
@@ -82,18 +80,18 @@ nav a:hover {
 .home-header  h1{
     font-family:'Bricolage Grotesque' ;
     font-weight: 700;
-    font-size: 50px;
-    margin-bottom: 18px;
+    font-size: 8vmin;
+    margin-bottom: 1vmin;
 }
 
 .home-header  h3{
-    font-size: 25px;
-    margin-bottom: 9px;
+    font-size: 4vmin;
+    margin-bottom: 0.8vmin;
 }
 
 .home-header  p{
     font-family: 'Montserrat';
-    font-size: 16px;
+    font-size: 2.5vmin;
     margin-bottom: 10px;
 }
 
@@ -101,10 +99,10 @@ nav a:hover {
     font-family: 'Raleway';
     background-color: #ff611d;
     color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
+    border-radius: 1vmin;
+    padding: 1.5vmin 2vmin;
     border: none;
-    font-size: 20px;
+    font-size: 2.5vmin;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -128,9 +126,8 @@ span {
 
 .home-body .row1, .row2, .row3, .row4{
     background-color: antiquewhite;
-    border-radius: 20px;
-    margin: 25px 0;
-    
+    border-radius: 2vmin;
+    margin: 6vmin 0;
     height: auto;
     width: 80%;
     display: flex;
@@ -156,12 +153,65 @@ span {
 .home-body p {
     display: flex;
     width: 60%;
+    margin: 2vmin;
    text-align: center;
+   font-size: 2.5vmin;
 }
 .home-body img {
-   height: 300px;
+    height: 40vmin;
     width: auto;
     object-fit: contain;
 
 }
 
+/* Body for small screens */
+@media (max-width: 625px){
+    .home-body .row1, .row2, .row3, .row4 {
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .home-body .row1 img, .row2 img, .row3 img, .row4 img {
+        order: -1;
+    }
+}
+
+
+ /* Navbar for small screens */
+@media (max-width: 860px){
+    .header-image {
+        filter: brightness(0.4);
+    }
+
+    nav {
+             background-color: rgba(20, 19, 19, 0.174);
+             color: white;
+    }
+   
+
+    nav ul{
+        display: none;
+    }
+
+
+    
+
+    .home-header {
+
+        color:white;
+
+        margin: 0;
+        padding: 0;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+}
