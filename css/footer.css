@@ -15,7 +15,7 @@ footer .logo {
     font-size: 4vmin;
     cursor: pointer;
     position: absolute;
-    left: 20%;
+    left: 10%;
     font-family: Crushed;
 }
 footer .copyright {
@@ -31,12 +31,27 @@ footer .copyright {
     position: absolute;
     right: 10%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 20%;
-    padding: 2vmin;
+    padding:10px ;
 }
 
-i {
+.icons i {
+    margin: 0 5px;
     font-size: 3.5vmin;
+}
+
+@media (max-width:850px) {
+  .icons 
+  {
+    height: 50px;
+    display: inline-block;
+
+  }
+  .icons i 
+  {
+    gap: 5px;
+   margin: 5px;
+  }
 }

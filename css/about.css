@@ -44,3 +44,44 @@ img {
     height: 100vh;
     z-index: -1;
 }
+
+@media (max-width:800px) {
+    .about {
+        margin-top: 15rem;
+        flex-direction: column;    
+        height: 100vh;
+    }
+ .image {
+        order: -1;
+        height: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        object-fit: contain;
+        
+    }
+
+    .text {
+        height: 80vh;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 3rem;
+        background-color: transparent;
+    }
+
+    h3 {
+        font-size: 2.5rem; /* Adjusts for smaller screens */
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.52rem;
+        text-align: center;
+        margin-top: 4rem;
+        margin: 1rem;
+    }
+}
