@@ -7,8 +7,6 @@
     width: 100wh;
     height: 300px;
     background-color: black;
-
-
     border-radius: 20px;
     padding: 20px;
     position: relative;
@@ -135,8 +133,91 @@
     cursor: pointer;
     display: block;
     color: white ;
-    
     background-image: linear-gradient(rgba(0,0,0,0.5,black));
-    
-
 }
+
+.responsive-category-head-img {
+    display: none;
+}
+
+@media (max-width:700px) {
+
+    .category-head img {
+        display: none;
+    }
+
+    .category-head {
+        margin: 5rem 1.5rem 1.5rem 1.5rem;
+        width: 100wh;
+        height: 23rem;
+        background-color: black;
+        border-radius: 1rem;
+        padding: 2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-head-text {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    .category-head-text p {
+        text-align: center;
+        font-size:1.1em;
+        padding: 1rem, 1rem;
+    }
+    .featured {
+        margin-top: 2rem;
+        text-align: center;
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60rem;
+        border-radius: 1rem;
+        background-color: var(--button-color);
+    }
+    
+    .featured-recipe {
+        
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .featured-recipe img {
+        width: 15rem;
+        height: 15rem;
+        overflow: hidden;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .category-list .grid{
+    
+            display: grid;
+            grid-template-columns: auto auto;
+            margin: 50px;
+    
+        
+    }
+
+    .grid img {
+        border-radius: 4rem;
+        width: 7rem;
+        height: auto;
+        
+    }
+   
+    .grid div p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
