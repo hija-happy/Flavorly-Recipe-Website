@@ -45,8 +45,7 @@ footer .copyright {
 @media (max-width:850px) {
   .icons 
   {
-    height: 50px;
-    display: inline-block;
+   display: none;
 
   }
   .icons i 

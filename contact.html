@@ -37,11 +37,15 @@
     <div class="contact">
         
         <div class="right-contact">
-            <form action="#">
+                <form id="contact-form"
+                    action="https://formspree.io/f/xkgodedg"
+                    onsubmit="submitForm(event)"
+                    method="POST"
+                    >
                 <img src="images/sticker/sticker.png" alt="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email">
-                <input type="message" placeholder="Message">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -72,6 +76,7 @@
         </div>
     </div>
 </body>
+<script src="js/contact.js"></script>
 <script src="js/function.js"></script>
 <script src="https://kit.fontawesome.com/8cdce12f0f.js" crossorigin="anonymous"></script>
 </html>

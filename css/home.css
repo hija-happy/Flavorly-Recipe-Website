@@ -87,7 +87,7 @@ nav a:hover {
     right: 0;
     display: none;
     flex-direction: column;
-    z-index: inherit;
+    z-index: 999999999999999;
     justify-content: flex-start;
     gap: 10%;
     align-items: flex-start;
