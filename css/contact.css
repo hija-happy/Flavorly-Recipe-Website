@@ -74,9 +74,11 @@ form img {
     left: 90%;
     width: 200px;
     height: auto;
-    z-index: 99999;
+    z-index: 100;
 }
-form input {
+form input, textarea {
+    justify-self: center;
+    text-align: start;
     background-color: antiquewhite;
     border-style: none;
     border-radius: 20px;
@@ -86,14 +88,16 @@ form input {
     margin: 30px 0 0 0;
 }
 
-form input::placeholder{
+form input::placeholder textarea::placeholder{
     outline: 0;
     padding: 10px;
    
     
 }
 
-
+textarea{
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.5);
+}
 
 form button {
     border-radius: 40px;
@@ -108,3 +112,43 @@ form button {
 span {
     color: var(--button-color);
 }
+
+@media (max-width:800px){
+
+    .contact {
+        align-items: center;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--set3);
+        width: 100%;
+        height: auto;
+    }
+    .left-contact {
+        text-align: center;
+        width: 90%;
+        margin: 0;
+    }
+    .left-contact h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .right-contact{
+
+        width: 20rem;
+    }
+    form {
+        padding: 1rem;
+        width: 90%;
+    }
+    form img {
+        left: -15%;
+    }
+
+   form input, textarea{
+        width: 15rem;
+        
+    }
+}
+
