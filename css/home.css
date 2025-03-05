@@ -75,28 +75,6 @@ nav a:hover {
     color: var(--button-color);
 }
 
-.sidebar {
-
-    position: fixed;
-    background-color: #ffffff1f;
-    backdrop-filter: blur(10px);
-    height: 100vh;
-    width: 40%;
-    top: 0;
-    box-shadow: -10px 0 10px rgba(0,0,0,0.3);
-    right: 0;
-    display: none;
-    flex-direction: column;
-    z-index: 999999999999999;
-    justify-content: flex-start;
-    gap: 10%;
-    align-items: flex-start;
-}
-
-.sidebar a {
-    font-size: 1.2rem;
-}
-
 .logo-phone {
     align-items: center;
     top: 10%;
@@ -222,10 +200,43 @@ span {
              color: white;
     }
    
-    nav ul{
-        display: none;
+    .nav-list {
+        box-shadow: 1px 0px 10px 3px black;
+        width: 40vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: -900px;
+        backdrop-filter: blur(10px) ;
     }
   
+    .nav-list.active {
+        right: 0;
+    }
+
+    .nav-list a {
+        color: white;
+        font-size: 1.3rem;
+        text-shadow: 2px 2px 3px black;
+        
+    }
+    .nav-list li {
+        padding: 1rem;
+        text-align: center;
+        width: 80%;
+        box-shadow: 0 0.3rem 2px -2px rgb(0, 0, 0); 
+        border-bottom: 2px solid var(--button-color);
+    }
+    .nav-list li:hover{
+        box-shadow: 1px 2px 3px black;
+        background-color: var(--color1);
+    }
+    .nav-list a:hover{
+        color: white;
+    }
+
     .home-header {
         
         color:white;
@@ -263,10 +274,6 @@ span {
     
 
     i {
-
-        position: absolute;
-        color: white;
-        top: 5%;
-        right: 5%;
+        display: none;
     }
 }

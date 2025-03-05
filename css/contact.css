@@ -150,5 +150,8 @@ span {
         width: 15rem;
         
     }
+    i {
+        display: none;
+    }
 }
 
