@@ -44,3 +44,6 @@ Since this is just a front-end UI, suggestions and design improvements are welco
 
 ## 📜 License
 This project is free to use and open-source.
+
+## 💗 Acknowledgements
+Designed with 💗 by [Hija Happy](https://www.linkedin.com/in/hija-happy)
